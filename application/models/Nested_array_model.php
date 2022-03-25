@@ -17,9 +17,9 @@ class Nested_array_model extends CI_model
 														kab.wilayah_kabupaten_id kab_id,
 														kab.wilayah_kabupaten_nama kab_nama
 													FROM
-														wilayah_provinsi prov
+														tabel_wilayah_provinsi prov
 													LEFT JOIN
-														wilayah_kabupaten kab
+														tabel_wilayah_kabupaten kab
 													ON prov.wilayah_provinsi_id = kab.wilayah_provinsi_id')
 									->result();
 		return $q;

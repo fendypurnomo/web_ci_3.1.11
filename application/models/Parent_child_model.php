@@ -28,8 +28,8 @@ class Parent_child_model extends CI_Model
 															@bapakId := a.wilayah_kecamatan_id,
 															@cucuId := 3
 															) AS cucu
-														FROM wilayah_kecamatan AS a
-														LEFT JOIN wilayah_kabupaten AS b
+														FROM tabel_wilayah_kecamatan AS a
+														LEFT JOIN tabel_wilayah_kabupaten AS b
 														ON a.wilayah_kabupaten_id = b.wilayah_kabupaten_id
 														LEFT JOIN wilayah_provinsi AS c
 														ON b.wilayah_provinsi_id = c.wilayah_provinsi_id')
